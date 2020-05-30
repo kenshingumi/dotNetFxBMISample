@@ -18,8 +18,8 @@ namespace WebBMI.Controllers
         public ActionResult Calculate(FormCollection data)
         {
             //get Data From UI
-            int fieldHeight = int.Parse(data["fieldHeight"]);
-            int fieldWeight = int.Parse(data["fieldWeight"]);
+            int fieldHeight = float.Parse(data["fieldHeight"]);
+            int fieldWeight = float.Parse(data["fieldWeight"]);
 
             //BO
             HealthMgr.BmiCalculator bc = new HealthMgr.BmiCalculator();
