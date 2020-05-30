@@ -28,6 +28,8 @@ namespace WebBMI.Controllers
             //get BMI 
             ViewBag.Result = bc.Calculate();
              
+            //modify
+             
             ViewBag.fieldHeight = fieldHeight;
             ViewBag.fieldWeight = fieldWeight;
             //show Page Index
